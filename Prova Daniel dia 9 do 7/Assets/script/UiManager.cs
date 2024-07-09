@@ -22,13 +22,11 @@ public class UiManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI textoDoRelogio;
 
-    void AtualizarSetas(KeyCode[] setas)
+    public void AtualizarSetas(KeyCode[] setas)
     {
-        for (int i = 0; imagens[Image]   
+        for (int i = 0; i < imagens.Length; i++)
         {
-
+            sprite = ;
         }
     }
-
-
 }

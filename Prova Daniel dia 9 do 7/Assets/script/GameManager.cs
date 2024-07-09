@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
             
         }
         void ChecarTecla(KeyCode downArrow)
-        {
+        {   
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 ChecarTecla(KeyCode.DownArrow);

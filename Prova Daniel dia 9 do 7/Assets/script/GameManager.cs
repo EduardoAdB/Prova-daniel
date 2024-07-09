@@ -7,14 +7,23 @@ public class GameManager : MonoBehaviour
 {
     int pontos, teclaAtual;
     float relogio;
-    KeyCode teclas;
+    KeyCode[] teclas;
 
     
     // Start is called before the first frame update
    
     void GerarSetas()
     {
-
+        teclaAtual = 0;
+        teclas = System.Random.Next([5, 15]) ;
+        
+        
+        
+        for (int i = 0; i < tamanhoArray; i++)
+        {
+            teclas[i] = Random.Next(273, 277);
+        }
+         
     }
     void Start()
     {
@@ -26,7 +35,7 @@ public class GameManager : MonoBehaviour
     {
         void ContagemRegressiva()
         {
-
+            relogio = Time.deltaTime;
         }
         void ChecarTecla(KeyCode downArrow)
         {

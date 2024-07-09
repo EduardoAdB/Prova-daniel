@@ -24,12 +24,29 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        void ChecarTecla()
+        void ContagemRegressiva()
+        {
+
+        }
+        void ChecarTecla(KeyCode downArrow)
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 ChecarTecla(KeyCode.DownArrow);
             }
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                ChecarTecla(KeyCode.UpArrow);
+            }
+            if (Input.GetKeyDown (KeyCode.RightArrow))
+            {
+                ChecarTecla (KeyCode.RightArrow);
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                ChecarTecla (KeyCode.LeftArrow);
+            }
+            ContagemRegressiva();
         }
     }
 }

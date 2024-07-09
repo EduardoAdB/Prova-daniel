@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,16 @@ public class UiManager : MonoBehaviour
     [SerializeField]
     Sprite[] sprite;
     [SerializeField]
-    Image[] image;
+    Image[] imagens;
+    [SerializeField]
+    TextMeshProUGUI textoDePontuacao;
+    [SerializeField]
+    TextMeshProUGUI textoDoRelogio;
+
+    void AtualizarSetas()
+    {
+
+    }
+
 
 }

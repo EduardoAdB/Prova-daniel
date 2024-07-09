@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         void ContagemRegressiva()
         {
             relogio = Time.deltaTime;
+            
         }
         void ChecarTecla(KeyCode downArrow)
         {

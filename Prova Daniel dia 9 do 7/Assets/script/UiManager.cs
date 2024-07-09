@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,9 +22,12 @@ public class UiManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI textoDoRelogio;
 
-    void AtualizarSetas()
+    void AtualizarSetas(KeyCode[] setas)
     {
+        for (int i = 0; imagens[Image]   
+        {
 
+        }
     }
 
 

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     
     // Start is called before the first frame update
+   
     void GerarSetas()
     {
 
@@ -23,9 +24,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        void ChecarTecla()
         {
-
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                ChecarTecla(KeyCode.DownArrow);
+            }
         }
     }
 }

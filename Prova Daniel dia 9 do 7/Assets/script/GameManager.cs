@@ -15,13 +15,14 @@ public class GameManager : MonoBehaviour
     void GerarSetas()
     {
         teclaAtual = 0;
-        teclas = System.Random.Next([5, 15]) ;
-        
-        
-        
-        for (int i = 0; i < tamanhoArray; i++)
+        System.Random random = new System.Random();
+        int tamanhoArray = random.Next(5, 15);
+        int[] teclas = new int[tamanhoArray];
+
+
+        for (int i = 0; i < teclas.Length; i++)
         {
-            teclas[i] = Random.Next(273, 277);
+            teclas[i] = random.Next(273, 276);
         }
          
     }

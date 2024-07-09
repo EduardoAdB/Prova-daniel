@@ -61,4 +61,10 @@ public class UiManager : MonoBehaviour
             imagens[setaSelecionada].color = Color.red;
         }
     }
+
+    public void AtualizarTextos(int pontuacao, float relogio)
+    {
+        textoDePontuacao.text = pontuacao.ToString("F2");
+        textoDoRelogio.text = relogio.ToString("F2");
+    }
 }
